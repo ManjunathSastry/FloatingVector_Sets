@@ -132,7 +132,7 @@ installs_vs_rating = sns.jointplot(df['Installs'], df['Rating'], kind ='reg', co
 
 #-----------------------Beginning of BLOCK FOUR - Run as one Set --------------------------------------------------------------------
 
-#"""Prediction of Rating Range - a Regression Problem"""
+#"""Prediction of Rating Range - a Regression Problem""" - an example to highlight the importance of Features
 
 #Ignore features irrelevant for prediction  
 df.drop(['App', 'Last Updated', 'Current Ver'], 1, inplace = True)
