@@ -132,7 +132,7 @@ installs_vs_rating = sns.jointplot(df['Installs'], df['Rating'], kind ='reg', co
 
 #-----------------------Beginning of BLOCK FOUR - Run as one Set --------------------------------------------------------------------
 
-#"""Prediction of Rating Range - a Regression Problem""" - an example to highlight the importance of Features
+#"""Prediction of Rating Range - a Regression Problem""" 
 
 #Ignore features irrelevant for prediction  
 df.drop(['App', 'Last Updated', 'Current Ver'], 1, inplace = True)
@@ -185,8 +185,8 @@ diff_list = abs(result['Predicted']-result['Actual'])
 mean_diff = np.nanmean(diff_list)
 variance = np.square(diff_list-mean_diff).sum()/len(diff_list)
 standard_deviation = np.sqrt(variance)
-lower_bound = np.around(y_pred - (standard_deviation/2),2)
-upper_bound = np.around(y_pred + (standard_deviation/2),2)
+lower_bound = np.around(y_pred - (standard_deviation),2)
+upper_bound = np.around(y_pred + (standard_deviation),2)
 
 result_final = pd.DataFrame({'Actual Rating':y_test, 'Lower Bound on Predicted Rating': lower_bound, 'Upper Bound on Predicted Rating': upper_bound })
 print('Final Result Set:')
