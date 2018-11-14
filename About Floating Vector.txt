@@ -6,3 +6,6 @@ our founding members were keen on exploring the frontiers of data analytics and 
 As we’d like to put it - Engineering insights from data, is as good as magic! 
 
 Floating Vector is the brain child of this argumentation. We do our bit in creating, exploring and analyzing data sets to derive, interpret and leverage cognizance!
+
+#FloatingVector
+#FVInsights
